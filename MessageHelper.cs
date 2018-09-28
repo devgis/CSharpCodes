@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Pimco.BlotterServiceMonitor.Common
+namespace Common
 {
     public class MessageHelper
     {
