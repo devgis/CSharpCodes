@@ -1,13 +1,12 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
-using System.Web;
 
-namespace HFSIFrameLib.COM
+namespace DataSync
 {
     public class Loger
     {
@@ -18,10 +17,6 @@ namespace HFSIFrameLib.COM
                && "TRUE".Equals(System.Configuration.ConfigurationManager.AppSettings["Log"].ToUpper()))
             {
                 string filePath = Path.Combine(Application.StartupPath, "Logs");
-                if (HttpContext.Current != null && HttpContext.Current.Server != null && Directory.Exists(HttpContext.Current.Server.MapPath("/")))
-                {
-                    filePath = Path.Combine(HttpContext.Current.Server.MapPath("/"), "Logs");
-                }
                 if (!Directory.Exists(filePath))
                 {
                     Directory.CreateDirectory(filePath);
@@ -37,7 +32,7 @@ namespace HFSIFrameLib.COM
                         Directory.CreateDirectory(filePath);
                     }
 
-                    File.AppendAllLines(Path.Combine(filePath, DateTime.Now.ToString("yyyy-MM-dd-HH") + ".log"), list, Encoding.Default);
+                    File.AppendAllLines(Path.Combine(filePath, DateTime.Now.ToString("yyyy-MM-dd") + ".log"), list, Encoding.Default);
                 }
                 catch
                 { }
