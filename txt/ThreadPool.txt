@@ -1,0 +1,10 @@
+for (int i = 0; i < 100; i++)
+            {
+                ThreadPool.QueueUserWorkItem(o =>
+                {
+                    Console.WriteLine(o.ToString());
+
+                }, i);
+
+            }
+            Console.Read();
