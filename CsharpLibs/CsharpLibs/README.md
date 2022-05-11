@@ -1,2 +1,0 @@
-# OracleHelper
-OracleHelper For C#
