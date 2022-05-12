@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0950CE3B-E369-4C8E-8EFD-90409C9027CD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSharpHelper</RootNamespace>
+    <AssemblyName>CSharpHelper</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DeleCommand.cs" />
+    <Compile Include="RandomHelper.cs" />
+    <Compile Include="CNDate.cs" />
+    <Compile Include="ConfigHelper.cs" />
+    <Compile Include="ConnectCommand.cs" />
+    <Compile Include="ConnectResponse.cs" />
+    <Compile Include="ConvertHelper.cs" />
+    <Compile Include="ConvertJson.cs" />
+    <Compile Include="CookieHelper.cs" />
+    <Compile Include="CsvHelper.cs" />
+    <Compile Include="DataCache.cs" />
+    <Compile Include="DataToExcel.cs" />
+    <Compile Include="DateFormat.cs" />
+    <Compile Include="DEncrypt.cs" />
+    <Compile Include="DESEncrypt.cs" />
+    <Compile Include="DirFile.cs" />
+    <Compile Include="DownLoadHelper.cs" />
+    <Compile Include="EcanConvertToCh.cs" />
+    <Compile Include="Encrypt.cs" />
+    <Compile Include="FileDown.cs" />
+    <Compile Include="FileOperate.cs" />
+    <Compile Include="FileUp.cs" />
+    <Compile Include="FormulaExpress.cs" />
+    <Compile Include="FTPClient.cs" />
+    <Compile Include="FTPHelper.cs" />
+    <Compile Include="FTPOperater.cs" />
+    <Compile Include="HashEncode.cs" />
+    <Compile Include="HTMLHelper.cs" />
+    <Compile Include="HttpHelper.cs" />
+    <Compile Include="HttpProc.cs" />
+    <Compile Include="ImageClass.cs" />
+    <Compile Include="INIFile.cs" />
+    <Compile Include="IpHelper.cs" />
+    <Compile Include="JavaScriptPlus.cs" />
+    <Compile Include="JsHelper.cs" />
+    <Compile Include="ListCommand.cs" />
+    <Compile Include="ListResponse.cs" />
+    <Compile Include="MailHeaders.cs" />
+    <Compile Include="MailHelper.cs" />
+    <Compile Include="MailMessageEx.cs" />
+    <Compile Include="MailPoper.cs" />
+    <Compile Include="MailSender.cs" />
+    <Compile Include="MediaHandler.cs" />
+    <Compile Include="MediaTypes.cs" />
+    <Compile Include="MessageBox.cs" />
+    <Compile Include="MimeEntity.cs" />
+    <Compile Include="MimeHeaders.cs" />
+    <Compile Include="MimeReader.cs" />
+    <Compile Include="MySecurity.cs" />
+    <Compile Include="NetHelper.cs" />
+    <Compile Include="NoopCommand.cs" />
+    <Compile Include="PassCommand.cs" />
+    <Compile Include="PicDeal.cs" />
+    <Compile Include="PinYin.cs" />
+    <Compile Include="Pop3Client.cs" />
+    <Compile Include="Pop3Command.cs" />
+    <Compile Include="Pop3Commands.cs" />
+    <Compile Include="Pop3Exception.cs" />
+    <Compile Include="Pop3ListItem.cs" />
+    <Compile Include="Pop3Response.cs" />
+    <Compile Include="Pop3Responses.cs" />
+    <Compile Include="Pop3State.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryString.cs" />
+    <Compile Include="QuitCommand.cs" />
+    <Compile Include="QuotedPrintableEncoding.cs" />
+    <Compile Include="RandomOperate.cs" />
+    <Compile Include="RegexHelper.cs" />
+    <Compile Include="ResourceManager.cs" />
+    <Compile Include="ResourceManagerWrapper.cs" />
+    <Compile Include="Resources.cs" />
+    <Compile Include="RetrCommand.cs" />
+    <Compile Include="RetrResponse.cs" />
+    <Compile Include="RSACryption.cs" />
+    <Compile Include="RsetCommand.cs" />
+    <Compile Include="Serialize.cs" />
+    <Compile Include="SerializeHelper.cs" />
+    <Compile Include="SmtpServerHelper.cs" />
+    <Compile Include="Stat.cs" />
+    <Compile Include="StatCommand.cs" />
+    <Compile Include="StatResponse.cs" />
+    <Compile Include="StringHelper.cs" />
+    <Compile Include="SysHelper.cs" />
+    <Compile Include="TimeHelper.cs" />
+    <Compile Include="TimeParser.cs" />
+    <Compile Include="Tools.cs" />
+    <Compile Include="TopCommand.cs" />
+    <Compile Include="UpLoadFiles.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UrlOper.cs" />
+    <Compile Include="UserCommand.cs" />
+    <Compile Include="XmlHelper.cs" />
+    <Compile Include="XMLProcess.cs" />
+    <Compile Include="YZMHelper.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
