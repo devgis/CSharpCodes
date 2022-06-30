@@ -55,5 +55,40 @@ namespace DEVGIS.CsharpLibs
             fs.Close();
             return dt;
         }
+
+        /// <summary>
+        /// 导出报表为Csv
+        /// </summary>
+        /// <param name="dt">DataTable</param>
+        /// <param name="strFilePath">物理路径</param>
+        /// <param name="tableheader">表头</param>
+        /// <param name="columname">字段标题,逗号分隔</param>
+        public static bool SaveCSV(DataTable dt, string strFilePath, string tableheader, string columname)
+        {
+            try
+            {
+                string strBufferLine = "";
+                StreamWriter strmWriterObj = new StreamWriter(strFilePath, false, System.Text.Encoding.UTF8);
+                strmWriterObj.WriteLine(tableheader);
+                strmWriterObj.WriteLine(columname);
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    strBufferLine = "";
+                    for (int j = 0; j < dt.Columns.Count; j++)
+                    {
+                        if (j > 0)
+                            strBufferLine += ",";
+                        strBufferLine += dt.Rows[i][j].ToString();
+                    }
+                    strmWriterObj.WriteLine(strBufferLine);
+                }
+                strmWriterObj.Close();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

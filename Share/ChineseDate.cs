@@ -1,11 +1,11 @@
 using System;
 
-namespace CSharpHelper
+namespace DEVGIS.CsharpLibs
 {
     /// <summary>
     /// 农历属性
     /// </summary>
-    public class CNDate
+    public class ChineseDate
     {
         /// <summary>
         /// 农历年(整型)
@@ -517,9 +517,9 @@ namespace CSharpHelper
         /// <summary>
         /// 获取农历
         /// </summary>
-        public static CNDate getChinaDate(DateTime dt)
+        public static ChineseDate getChinaDate(DateTime dt)
         {
-            CNDate cd = new CNDate();
+            ChineseDate cd = new ChineseDate();
             int year = dt.Year;
             int month = dt.Month;
             int date = dt.Day;

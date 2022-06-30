@@ -9,6 +9,8 @@ namespace DEVGIS.CsharpLibs
 {
     public class CsharpHelper
     {
+
+#if DOTNETFX || WPF
         /// <summary>
         /// Regist Default Open App the file 
         /// </summary>
@@ -58,5 +60,7 @@ namespace DEVGIS.CsharpLibs
                 if (hasSubKey && (key != null)) key.Close();
             }
         }
+
+#endif
     }
 }

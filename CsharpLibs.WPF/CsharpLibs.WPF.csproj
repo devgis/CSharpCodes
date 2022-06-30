@@ -82,6 +82,9 @@
     <Compile Include="..\Share\BllClass.cs">
       <Link>BllClass.cs</Link>
     </Compile>
+    <Compile Include="..\Share\ChineseDate.cs">
+      <Link>ChineseDate.cs</Link>
+    </Compile>
     <Compile Include="..\Share\Comparer.cs">
       <Link>Comparer.cs</Link>
     </Compile>
