@@ -85,6 +85,9 @@
     <Compile Include="..\Share\Comparer.cs">
       <Link>Comparer.cs</Link>
     </Compile>
+    <Compile Include="..\Share\CsharpHelper.cs">
+      <Link>CsharpHelper.cs</Link>
+    </Compile>
     <Compile Include="..\Share\CSVHelper.cs">
       <Link>CSVHelper.cs</Link>
     </Compile>
