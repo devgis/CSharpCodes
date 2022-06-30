@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;DOTNETCORE</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Share\BllClass.cs" Link="BllClass.cs" />
+    <Compile Include="..\Share\Comparer.cs" Link="Comparer.cs" />
+    <Compile Include="..\Share\CSVHelper.cs" Link="CSVHelper.cs" />
+    <Compile Include="..\Share\DalClass.cs" Link="DalClass.cs" />
+    <Compile Include="..\Share\DESEncrptor.cs" Link="DESEncrptor.cs" />
+    <Compile Include="..\Share\HttpHelper.cs" Link="HttpHelper.cs" />
+    <Compile Include="..\Share\ListToCsv.cs" Link="ListToCsv.cs" />
+    <Compile Include="..\Share\Loger.cs" Link="Loger.cs" />
+    <Compile Include="..\Share\Loger2.cs" Link="Loger2.cs" />
+    <Compile Include="..\Share\OledbHelper.cs" Link="OledbHelper.cs" />
+    <Compile Include="..\Share\OracleHelper.cs" Link="OracleHelper.cs" />
+    <Compile Include="..\Share\OraHelper_OracleManagedDataAccess.cs" Link="OraHelper_OracleManagedDataAccess.cs" />
+    <Compile Include="..\Share\SerializeObj.cs" Link="SerializeObj.cs" />
+    <Compile Include="..\Share\SQLHelper.cs" Link="SQLHelper.cs" />
+    <Compile Include="..\Share\SQLServerHelper.cs" Link="SQLServerHelper.cs" />
+    <Compile Include="..\Share\TestSendEmail.cs" Link="TestSendEmail.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Oracle.ManagedDataAccess" Version="21.6.1" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+    <PackageReference Include="System.Data.OleDb" Version="4.6.0" />
+    <PackageReference Include="System.Data.OracleClient" Version="1.0.8" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.6.1" />
+  </ItemGroup>
+
+</Project>

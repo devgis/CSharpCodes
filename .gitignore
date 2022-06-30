@@ -1,4 +1,9 @@
 packages
 CsharpLibs/bin
 CsharpLibs/obj
+CsharpLibs.Core/bin
+CsharpLibs.Core/obj
+CsharpLibs.WPF/bin
+CsharpLibs.WPF/obj
+.vs
 .vs/CsharpLibs/v16/.suo

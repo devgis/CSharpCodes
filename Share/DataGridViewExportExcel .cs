@@ -95,7 +95,7 @@ namespace DEVGIS.CsharpLibs
             {
                 wb.Write(fs);
             }
-            MessageHelperWinform.ShowInfo("导出成功！");
+            MessageHelper.ShowInfo("导出成功！");
             //MessageBox.Show("导出成功！", "导出提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 

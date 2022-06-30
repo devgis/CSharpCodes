@@ -8,7 +8,7 @@ namespace DEVGIS.CsharpLibs
 {
     public class MessageHelper
     {
-        private static string MessageTitle = "ø®∆¨¥Ú”°œµÕ≥";
+        private static string MessageTitle = "CsharpLibs";
 
         /// <summary>
         /// Show a error message

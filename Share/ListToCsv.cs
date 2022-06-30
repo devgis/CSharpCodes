@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -43,7 +42,7 @@ namespace DEVGIS.CsharpLibs
                 {
                     try
                     {
-                        var value = JsonConvert.SerializeObject(properties[i].GetValue(item, null));
+                        var value = properties[i].GetValue(item, null).ToString();
                         value = value.TrimStart('[').TrimEnd(']').Replace(",", "；");
                         if (i == 0)
                         {

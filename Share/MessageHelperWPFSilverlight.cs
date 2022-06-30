@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Forms;
 
 namespace DEVGIS.CsharpLibs
 {
-    public class MessageHelperWPFSilverlight
+    public class MessageHelper
     {
-        private static string MessageTitle = "System";
+        private static string MessageTitle = "CsharpLibs";
 
         /// <summary>
         /// Show a error message
@@ -18,7 +17,7 @@ namespace DEVGIS.CsharpLibs
         /// <param name="Error"></param>
         public static void ShowError(string Error)
         {
-            //MessageBox.Show(Error, MessageTitle,MessageBoxButton.OK,MessageBoxImage.Error);
+            MessageBox.Show(Error, MessageTitle,MessageBoxButton.OK,MessageBoxImage.Error);
         }
 
         /// <summary>
@@ -27,7 +26,7 @@ namespace DEVGIS.CsharpLibs
         /// <param name="Info"></param>
         public static void ShowInfo(string Info)
         {
-            //MessageBox.Show(Info, MessageTitle, MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show(Info, MessageTitle, MessageBoxButton.OK, MessageBoxImage.Information);
         }
 
         /// <summary>
@@ -37,14 +36,14 @@ namespace DEVGIS.CsharpLibs
         /// <returns></returns>
         public static bool ShowQuestion(string Question)
         {
-            //if (MessageBox.Show(Question, MessageTitle, MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
-            //{
-            //    return true;
-            //}
-            //else
-            //{
-            //    return false;
-            //}
+            if (MessageBox.Show(Question, MessageTitle, MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
             return false;
         }
     }

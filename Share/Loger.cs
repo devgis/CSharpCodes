@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 using System.IO;
 using System.Reflection;
+#if DOTNETFX
 using System.Windows.Forms;
+#endif
 
 namespace DEVGIS.CsharpLibs
 {
@@ -16,7 +18,10 @@ namespace DEVGIS.CsharpLibs
             if (System.Configuration.ConfigurationManager.AppSettings["Log"] != null
                && "TRUE".Equals(System.Configuration.ConfigurationManager.AppSettings["Log"].ToUpper()))
             {
-                string filePath = Path.Combine(Application.StartupPath, "Logs");
+                string filePath = string.Empty;
+#if DOTNETFX
+                filePath = Path.Combine(Application.StartupPath, "Logs");
+#endif
                 if (!Directory.Exists(filePath))
                 {
                     Directory.CreateDirectory(filePath);

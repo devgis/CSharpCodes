@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.489
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32602.291
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpLibs", "CsharpLibs\CsharpLibs.csproj", "{7AC876B1-4E09-4043-B31C-98B0DE0BE34B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpLibs.WPF", "CsharpLibs.WPF\CsharpLibs.WPF.csproj", "{D3341A37-24A2-4FDF-9906-2DDD7C0E85A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CsharpLibs.Core", "CsharpLibs.Core\CsharpLibs.Core.csproj", "{479E463D-B40D-44D7-8655-6F055662CE6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{7AC876B1-4E09-4043-B31C-98B0DE0BE34B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AC876B1-4E09-4043-B31C-98B0DE0BE34B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AC876B1-4E09-4043-B31C-98B0DE0BE34B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3341A37-24A2-4FDF-9906-2DDD7C0E85A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3341A37-24A2-4FDF-9906-2DDD7C0E85A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3341A37-24A2-4FDF-9906-2DDD7C0E85A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3341A37-24A2-4FDF-9906-2DDD7C0E85A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{479E463D-B40D-44D7-8655-6F055662CE6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{479E463D-B40D-44D7-8655-6F055662CE6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{479E463D-B40D-44D7-8655-6F055662CE6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{479E463D-B40D-44D7-8655-6F055662CE6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
